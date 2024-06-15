@@ -1,0 +1,13 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/vue1" (click)="sidenav.close()">Vue 1</a>
+      <a mat-list-item routerLink="/vue2" (click)="sidenav.close()">Vue 2</a>
+      <a mat-list-item routerLink="/vue3" (click)="sidenav.close()">Vue 3</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
